@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/exercises"
+        android:icon="@mipmap/ic_barbell_foreground"
+        android:title="Exercises"
+        android:iconTint="@color/barbell"/>
+    <item
+        android:id="@+id/articles"
+        android:icon="@mipmap/ic_book_foreground"
+        android:title="Articles"
+        android:iconTint="@color/book"/>
+    <item
+        android:id="@+id/account"
+        android:icon="@mipmap/ic_user_foreground"
+        android:title="Account"
+        android:iconTint="@color/user"/>
+</menu>

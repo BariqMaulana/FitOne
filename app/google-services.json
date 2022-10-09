@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "531279677514",
+    "project_id": "fitone-4ebfd",
+    "storage_bucket": "fitone-4ebfd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531279677514:android:045bac63a58ac81b85feb3",
+        "android_client_info": {
+          "package_name": "com.example.fitone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "531279677514-8j2erss1oon3pfjkpna5k88pdqaik18t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDELhq-skEIVPFEigztwhpCprXp6vA0C2g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "531279677514-8j2erss1oon3pfjkpna5k88pdqaik18t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
