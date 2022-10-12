@@ -23,7 +23,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class login_activity extends AppCompatActivity {
 
     EditText etEmail, etPassword;
-    TextView tvRegister;
+    TextView tvRegister, tvForgotPassword;
     Button btnLogin;
     ImageView buttonBack;
 
@@ -38,6 +38,7 @@ public class login_activity extends AppCompatActivity {
         etPassword = (EditText) findViewById(R.id.et_password);
         btnLogin = (Button) findViewById(R.id.btn_login);
         tvRegister = (TextView) findViewById(R.id.tv_register);
+        tvForgotPassword = (TextView) findViewById(R.id.tv_forgot_password);
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -45,6 +46,14 @@ public class login_activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(login_activity.this, register_activity.class);
+                startActivity((i));
+            }
+        });
+
+        tvForgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(login_activity.this, forgot_password.class);
                 startActivity((i));
             }
         });
@@ -84,7 +93,7 @@ public class login_activity extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()){
                         Toast.makeText(login_activity.this, "User logged in successfully", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(login_activity.this, MainActivity.class));
+                        startActivity(new Intent(login_activity.this, profile_activity.class));
                     } else{
                         Toast.makeText(login_activity.this, "Login Error: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                     }

@@ -1,11 +1,13 @@
 package com.example.fitone;
 
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
@@ -26,6 +28,7 @@ public class open_workout extends AppCompatActivity {
     private Button btnStartPause, btnReset, btnPlay;
     private CountDownTimer mCountDownTimer;
     private boolean mTimerRunning;
+    private boolean mVideoRunning;
     private long mTimeLeftInMillis = START_TIME_IN_MILLIS;
 
     @Override
@@ -37,8 +40,16 @@ public class open_workout extends AppCompatActivity {
 
         btnStartPause = findViewById(R.id.button_start_pause);
         btnReset = findViewById(R.id.button_reset);
-        btnPlay = findViewById(R.id.button_play);
+//        btnPlay = findViewById(R.id.button_play_pause);
         videov = findViewById(R.id.displayWorkout);
+
+        String videopath = "android.resource://com.example.fitone/" + R.raw.pullupexercise;
+        Uri uri = Uri.parse(videopath);
+        videov.setVideoURI(uri);
+
+        MediaController mediaController = new MediaController(this);
+        videov.setMediaController(mediaController);
+        mediaController.setAnchorView(videov);
 
         btnStartPause.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,12 +69,16 @@ public class open_workout extends AppCompatActivity {
             }
         });
 
-        btnPlay.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                videoplay();
-            }
-        });
+//        btnPlay.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                if (mVideoRunning) {
+//                    videopause();
+//                } else {
+//                    videoplay();
+//                }
+//            }
+//        });
 
         updateCountDownText();
 
@@ -112,7 +127,22 @@ public class open_workout extends AppCompatActivity {
         String videopath = "android.resource://com.example.fitone/" + R.raw.pullupexercise;
         Uri uri = Uri.parse(videopath);
         videov.setVideoURI(uri);
-        videov.start();
+//        videov.start();
+//        btnPlay.setText("Pause");
+//        mVideoRunning = true;
+        MediaController mediaController = new MediaController(this);
+        videov.setMediaController(mediaController);
+        mediaController.setAnchorView(videov);
+
+    }
+
+    private void videopause() {
+//        String videopath = "android.resource://com.example.fitone/" + R.raw.pullupexercise;
+//        Uri uri = Uri.parse(videopath);
+//        videov.setVideoURI(uri);
+        videov.pause();
+//        btnPlay.setText("Play");
+        mVideoRunning = false;
     }
 
 
@@ -130,6 +160,9 @@ public class open_workout extends AppCompatActivity {
                 btnStartPause.setText("Pause");
                 btnStartPause.setVisibility(View.INVISIBLE);
                 btnReset.setVisibility(View.VISIBLE);
+//                String soundPath = "android.resource://com.example.fitone/" + R.raw.ring;
+//                MediaPlayer mediaPlayer = MediaPlayer.create(open_workout.this, Uri.parse(soundPath));
+//                mediaPlayer.start();
             }
         } .start();
         mTimerRunning = true;

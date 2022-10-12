@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+
+        <ImageView
+            android:id="@+id/backButtonArticle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_arrow_back_foreground" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout4">
+
+        <RelativeLayout
+            android:id="@+id/layout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_article"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/office_snacks"/>
+
+
+            <TextView
+                android:id="@+id/title_article"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_article"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="Are Office Snacks Making You Fat? This is Why"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:layout_below="@id/title_article"
+                android:id="@+id/user_picture_article"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/layout_timer_rounded"
+                android:backgroundTint="@color/user"/>
+
+            <TextView
+                android:id="@+id/user_name_article"
+                android:layout_toRightOf="@id/user_picture_article"
+                android:layout_below="@id/title_article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Lisa Tolin" />
+
+            <TextView
+                android:id="@+id/type_article"
+                android:layout_below="@id/user_name_article"
+                android:layout_toRightOf="@id/user_picture_article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:text="Diet &amp; Fitness" />
+
+            <TextView
+                android:id="@+id/date_article"
+                android:layout_toEndOf="@id/type_article"
+                android:layout_below="@id/title_article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="120dp"
+                android:text="1 April 2021"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/user_picture_article"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="10dp"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="In one frequently cited study, researchers at the Cornell Food &amp; Brand Lab gave secretaries containers of Hershey’s kisses and recorded how many they ate. When the candies were on the secretaries’ desks, they ate 48 percent more than they did if they were placed 2 meters away.
+When the containers were see-through instead of opaque, they ate about 2 extra kisses per day.
+So reducing snacking might be as easy as changing where and how the snacks are displayed. Google set out to hack its snacking problem with help from researchers from the Yale Center for Customer Insights. First, they targeted their most popular snack item: bulk M&amp;Ms. Google had been giving them out self-serve in 4 oz cups. Switching to individual snack packets reduced the average serving by 58 percent, from 308 calories to 130.
+Then they hid the M&amp;Ms in opaque containers, while using glass jars to display healthier snacks like dried fruit and nuts. They found that in the New York office alone, employees ate 3.1 million fewer calories from M&amp;Ms over seven weeks – equivalent to nine regular-sized packages of M&amp;Ms for each of the office’s 2,000 workers."/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>

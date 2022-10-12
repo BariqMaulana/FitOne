@@ -3,6 +3,7 @@ package com.example.fitone;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,7 +16,8 @@ import java.util.ArrayList;
 
 public class open_articles extends AppCompatActivity {
 
-    private BottomNavigationItemView item, btnAccount;
+    private BottomNavigationItemView exercises, btnAccount;
+    private TextView openArticle1;
     ImageSlider imageSlider;
 
     @Override
@@ -23,14 +25,15 @@ public class open_articles extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.article_view);
 
-        item = (BottomNavigationItemView) findViewById(R.id.exercises);
+        exercises = (BottomNavigationItemView) findViewById(R.id.exercises);
 
-        item.setOnClickListener(new View.OnClickListener() {
+        exercises.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onBackPressed();
-
+                Intent i = new Intent (open_articles.this, MainActivity.class);
+                startActivity(i);
             }
+
         });
 
         btnAccount = (BottomNavigationItemView) findViewById(R.id.account);
@@ -39,6 +42,17 @@ public class open_articles extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent (open_articles.this, login_activity.class);
+                startActivity(i);
+            }
+
+        });
+
+        openArticle1 = (TextView) findViewById(R.id.article_content1);
+
+        openArticle1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent (open_articles.this, show_article.class);
                 startActivity(i);
             }
 

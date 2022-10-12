@@ -32,29 +32,31 @@
         android:src="@mipmap/ic_launcher_round" />
 
     <EditText
-        android:hint="Username"
         android:id="@+id/et_reg_name"
         android:layout_width="250dp"
         android:layout_height="40dp"
         android:layout_below="@id/iv_user"
-        android:drawableLeft="@drawable/ic_action_name"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="80dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/ic_action_name"
         android:ems="10"
-        android:inputType="textEmailAddress"
-        android:background="@color/white"/>
+        android:hint="Username"
+        android:inputType="textEmailAddress" />
+
     <EditText
-        android:hint="Email"
         android:id="@+id/et_reg_email"
         android:layout_width="250dp"
         android:layout_height="40dp"
         android:layout_below="@id/et_reg_name"
-        android:drawableLeft="@drawable/ic_action_email"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/ic_action_email"
         android:ems="10"
-        android:inputType="textEmailAddress"
-        android:background="@color/white"/>
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
     <EditText
         android:hint="Password"
         android:id="@+id/et_reg_password"
