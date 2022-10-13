@@ -31,19 +31,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-<!--            <ImageView-->
-<!--                android:id="@+id/displayWorkout"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="300dp"-->
-<!--                android:background="@drawable/pull_up" />-->
             <FrameLayout
                 android:id="@+id/video_frame"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
+
                 <VideoView
                     android:id="@+id/displayWorkout"
                     android:layout_width="match_parent"
                     android:layout_height="250dp" />
+
             </FrameLayout>
 
 
@@ -68,14 +65,6 @@
                 android:layout_below="@id/video_frame"
                 android:orientation="horizontal"
                 android:gravity="center">
-
-<!--                <Button-->
-<!--                    android:id="@+id/button_play_pause"-->
-<!--                    android:layout_width="100dp"-->
-<!--                    android:layout_height="50dp"-->
-<!--                    android:layout_margin="20dp"-->
-<!--                    android:layout_weight="1"-->
-<!--                    android:text="Play" />-->
 
                 <Button
                     android:id="@+id/button_start_pause"

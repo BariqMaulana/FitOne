@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+
+        <ImageView
+            android:id="@+id/backButtonArticle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_arrow_back_foreground" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout4">
+
+        <RelativeLayout
+            android:id="@+id/layout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_article"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/lemonade_water" />
+
+
+            <TextView
+                android:id="@+id/title_article"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_article"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="Interesting Facts About Drinking Water with Lemonade"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:layout_below="@id/title_article"
+                android:id="@+id/user_picture_article"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/layout_timer_rounded"
+                android:backgroundTint="@color/user"/>
+
+            <TextView
+                android:id="@+id/user_name_article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_article"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/user_picture_article"
+                android:text="Luigi" />
+
+            <TextView
+                android:id="@+id/type_article"
+                android:layout_below="@id/user_name_article"
+                android:layout_toRightOf="@id/user_picture_article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:text="Diet &amp; Fitness" />
+
+            <TextView
+                android:id="@+id/date_article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_article"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="50dp"
+                android:layout_toEndOf="@id/type_article"
+                android:text="19 April 2021" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/user_picture_article"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="10dp"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="Lemonade may be thought of as an all-American beverage – at least where family cookouts and baseball games are concerned – but you might be surprised to learn that its original form actually hails from overseas.
+
+Because lemons originated from what is now China, India, and Myanmar, it’s likely that some style of lemon drink was consumed there. However, the earliest written record of a lemon beverage actually comes from 12th-century Egypt.
+
+Along the Mediterranean coast, medieval Egyptians enjoyed Kashkab – a drink made from fermented barley and flavored with mint, rue, black pepper, and citron leaf. As lemons were introduced to the region, this concoction became qatarmizat – essentially, a lemon water sweetened with sugar. This ancient recipe most resembles the lemonade we know and love today."/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>

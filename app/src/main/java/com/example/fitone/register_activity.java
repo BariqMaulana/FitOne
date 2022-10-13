@@ -39,12 +39,9 @@ public class register_activity extends AppCompatActivity {
         etRegEmail = (EditText) findViewById(R.id.et_reg_email);
         etRegName = (EditText) findViewById(R.id.et_reg_name);
         etRegPassword = (EditText) findViewById(R.id.et_reg_password);
-
-
+        btnRegister = (Button) findViewById(R.id.btn_register);
 
         mAuth = FirebaseAuth.getInstance();
-
-        btnRegister = (Button) findViewById(R.id.btn_register);
 
         btnRegister.setOnClickListener(view ->{
             createUser();

@@ -39,6 +39,7 @@ public class login_activity extends AppCompatActivity {
         btnLogin = (Button) findViewById(R.id.btn_login);
         tvRegister = (TextView) findViewById(R.id.tv_register);
         tvForgotPassword = (TextView) findViewById(R.id.tv_forgot_password);
+        buttonBack = (ImageView) findViewById(R.id.backButtonLogin);
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -64,8 +65,6 @@ public class login_activity extends AppCompatActivity {
                 loginUser();
             }
         });
-
-        buttonBack = (ImageView) findViewById(R.id.backButtonLogin);
 
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override

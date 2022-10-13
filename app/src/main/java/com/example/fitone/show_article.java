@@ -26,5 +26,6 @@ public class show_article extends AppCompatActivity {
             }
 
         });
+
     }
 }

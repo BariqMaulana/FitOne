@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+
+        <ImageView
+            android:id="@+id/backButtonArticle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_arrow_back_foreground" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout4">
+
+        <RelativeLayout
+            android:id="@+id/layout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_article"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/run" />
+
+
+            <TextView
+                android:id="@+id/title_article"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_article"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="Why Exercise Slows Progression of Parkinson's Disease"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:layout_below="@id/title_article"
+                android:id="@+id/user_picture_article"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/layout_timer_rounded"
+                android:backgroundTint="@color/user"/>
+
+            <TextView
+                android:id="@+id/user_name_article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_article"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/user_picture_article"
+                android:text="Wenbo Zhou" />
+
+            <TextView
+                android:id="@+id/type_article"
+                android:layout_below="@id/user_name_article"
+                android:layout_toRightOf="@id/user_picture_article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:text="Diet &amp; Fitness" />
+
+            <TextView
+                android:id="@+id/date_article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_article"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="50dp"
+                android:layout_toEndOf="@id/type_article"
+                android:text="17 August 2021" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/user_picture_article"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="10dp"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="For the first time in a progressive, age-related mouse model of Parkinson's, researchers have shown that exercise on a running wheel can stop the accumulation of the neuronal protein alpha-synuclein in brain cells.
+
+The work, published Friday in the journal PLOS ONE, was done by Wenbo Zhou, PhD, research associate professor of medicine and Curt Freed, MD, professor of medicine and division head of the Division of Clinical Pharmacology and Toxicology at the CU School of Medicine.
+
+The researchers said clumps of alpha-synuclein are believed to play a central role in the brain cell death associated with Parkinson's disease. The mice in the study, like humans, started to get Parkinson's symptoms in mid-life. At 12 months of age, running wheels were put in their cages.
+
+After three months, Zhou said, the running animals showed much better movement and cognitive function compared to control transgenic animals which had locked running wheels."/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>

@@ -19,6 +19,12 @@
             android:name=".show_article"
             android:exported="false" />
         <activity
+            android:name=".show_article2"
+            android:exported="false" />
+        <activity
+            android:name=".show_article3"
+            android:exported="false" />
+        <activity
             android:name=".forgot_password"
             android:exported="false" />
         <activity
@@ -32,6 +38,21 @@
             android:exported="false" />
         <activity
             android:name=".open_workout"
+            android:exported="false" />
+        <activity
+            android:name=".open_workout2"
+            android:exported="false" />
+        <activity
+            android:name=".open_workout3"
+            android:exported="false" />
+        <activity
+            android:name=".open_workout4"
+            android:exported="false" />
+        <activity
+            android:name=".open_workout5"
+            android:exported="false" />
+        <activity
+            android:name=".open_workout6"
             android:exported="false" />
         <activity
             android:name=".open_articles"
